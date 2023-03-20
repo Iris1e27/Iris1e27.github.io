@@ -26,12 +26,12 @@
   }
 </style>
 
-  <title>Discusion&nbsp;|&nbsp;Jingtian的博客</title>
+  <title>常用的 AWS 组件&nbsp;|&nbsp;Jingtian的博客</title>
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Discusion">
+  <meta property="og:title" content="常用的 AWS 组件">
   
   
-    <meta property="og:image" content="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🗣️&lt;/text&gt;&lt;/svg&gt;">
+    <meta property="og:image" content="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🤹‍♀️&lt;/text&gt;&lt;/svg&gt;">
   
   <style>
     .DateTagBar {
@@ -174,14 +174,29 @@
     </div>
     
       <div class="Header__Icon">
-        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🗣️&lt;/text&gt;&lt;/svg&gt;"></span>
+        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🤹‍♀️&lt;/text&gt;&lt;/svg&gt;"></span>
       </div>
     
-    <h1 class="Header__Title">Discusion</h1>
+    <h1 class="Header__Title">常用的 AWS 组件</h1>
+    
+      <div class="DateTagBar">
+        
+          <span class="DateTagBar__Item DateTagBar__Date">Posted on Sun, Mar 19, 2023</span>
+        
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--red">
+            <a href="tag/总结.html">总结</a>
+          </span>
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/工具.html">工具</a>
+          </span>
+        
+      </div>
     
   </header>
     <div id="content-html"></div>
-  <article id="https://www.notion.so/9d45bb215d674883bd7219143af41536" class="PageRoot"><div id="https://www.notion.so/cdf742c0bb914be9bc2a36897b01e05d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">这是讨论区</strong></span></span></p></div><details id="https://www.notion.so/6ecaa0bec43c4021bb0c964b3833dd5c" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">Demo</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/e7b58b661fdc406cae5a4c9265168ccb" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Demo</span></span></p></div></div></details><div id="https://www.notion.so/5eab6ad1d1554c62b38df680db0a6be5" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">如果你有关于技术的问题，可以在下方留言，我们一起讨论。</span></span></p></div><div id="https://www.notion.so/baf9e11a641d4422be84bd7483b72370" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></article>
+  <article id="https://www.notion.so/44c92f35481142f0a73fd2bf7b8ae2d3" class="PageRoot"><ul id="https://www.notion.so/4cb48547d0454a9391d1722cdb54a973" class="ColorfulBlock ColorfulBlock--ColorGray TableOfContents"><li class="TableOfContents__Item"><a href="#https://www.notion.so/eba3dec6955540b8974d7617edf62111"><div style="margin-left:0px"><span class="SemanticStringArray"><span class="SemanticString">基本概念</span></span></div></a></li><li class="TableOfContents__Item"><a href="#https://www.notion.so/df455ba58ef642c8af7c541acb569430"><div style="margin-left:0px"><span class="SemanticStringArray"><span class="SemanticString">基本操作</span></span></div></a></li><li class="TableOfContents__Item"><a href="#https://www.notion.so/e3c29a5906c349f8976bc496a9462f1a"><div style="margin-left:24px"><span class="SemanticStringArray"><span class="SemanticString">如何上传前端页面到S3桶中？</span></span></div></a></li></ul><h2 id="https://www.notion.so/eba3dec6955540b8974d7617edf62111" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/eba3dec6955540b8974d7617edf62111"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">基本概念</span></span></h2><div id="https://www.notion.so/b2a95043758b46b59399fdfdb95a4794" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">EC2：就是一台虚拟机，需要自己选择需要的操作系统，以及配置环境什么的，可以运行app，但要记得挂载。</span></span></p></div><div id="https://www.notion.so/b6b264299db04593af5a3371bbf739a3" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">RDS：关系型数据库。</span></span></p></div><div id="https://www.notion.so/3965b2b8f4ab418f98e60f19a305e1cb" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">S3：</span></span></p></div><div id="https://www.notion.so/c18abb5878124f019b080bd7a7e00261" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Gateway：</span></span></p></div><div id="https://www.notion.so/37eb2cefd22d43d9a1791b98e872432f" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">CloudFront：</span></span></p></div><h2 id="https://www.notion.so/df455ba58ef642c8af7c541acb569430" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/df455ba58ef642c8af7c541acb569430"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">基本操作</span></span></h2><h3 id="https://www.notion.so/e3c29a5906c349f8976bc496a9462f1a" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/e3c29a5906c349f8976bc496a9462f1a"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">如何上传前端页面到S3桶中？</span></span></h3><div id="https://www.notion.so/6e2537745ccc49808ddefbbd95e02fd3" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></article>
     <aside class="Aside">
         <a href="#content-html"><div id="up">👆</div></a>
         <a href="#message-board"><div id="down">👇</div></a>
